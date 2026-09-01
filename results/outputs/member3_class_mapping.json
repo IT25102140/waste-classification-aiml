@@ -1,0 +1,47 @@
+{
+  "class_to_label": {
+    "Hazardous": 0,
+    "Non-Recyclable": 1,
+    "Organic": 2,
+    "Recyclable": 3
+  },
+  "label_to_class": {
+    "0": "Hazardous",
+    "1": "Non-Recyclable",
+    "2": "Organic",
+    "3": "Recyclable"
+  },
+  "subcategories": {
+    "Hazardous": [
+      "batteries",
+      "e-waste",
+      "paints",
+      "pesticides"
+    ],
+    "Non-Recyclable": [
+      "ceramic_product",
+      "diapers",
+      "plastics_bags_wrappers",
+      "sanitary_napkin",
+      "styrofoam_product"
+    ],
+    "Organic": [
+      "coffee_tea_bags",
+      "egg_shells",
+      "food_scraps",
+      "kitchen_waste",
+      "yard_trimmings"
+    ],
+    "Recyclable": [
+      "cans_all_type",
+      "glass_containers",
+      "paper_products",
+      "plastic_bottles"
+    ]
+  },
+  "resolved_aliases": {
+    "platics_bags_wrappers": "plastics_bags_wrappers",
+    "stroform_product": "styrofoam_product"
+  },
+  "review_label_sentinel": -1
+}

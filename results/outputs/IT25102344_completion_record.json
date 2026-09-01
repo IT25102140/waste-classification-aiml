@@ -1,0 +1,50 @@
+{
+  "member": "Ediriweera D.L",
+  "it_number": "IT25102344",
+  "task": "Label & Class Validation",
+  "status": "COMPLETED",
+  "input_stage": "stage2_visual_deduplicated",
+  "output_stage": "stage3_labels",
+  "quarantine_stage": "none (no defects found)",
+  "total_input_count": 2622,
+  "validated_sample_count": 2622,
+  "quarantined_count": 0,
+  "status_breakdown": {
+    "VALID": 2378,
+    "AUTO_CORRECTED": 244,
+    "REVIEW": 0
+  },
+  "consistency_audit": {
+    "sources_cross_checked": [
+      "member1_stage1_manifest.csv",
+      "member2_stage2_final_manifest.csv"
+    ],
+    "blocking_findings": 0,
+    "advisory_findings": 59,
+    "report_file": "results/outputs/member3_label_consistency_audit.csv",
+    "manual_intervention_required": false
+  },
+  "class_balance": {
+    "counts": {
+      "Hazardous": 672,
+      "Organic": 663,
+      "Recyclable": 650,
+      "Non-Recyclable": 637
+    },
+    "imbalance_ratio": 1.055
+  },
+  "resolved_aliases": {
+    "platics_bags_wrappers": "plastics_bags_wrappers",
+    "stroform_product": "styrofoam_product"
+  },
+  "class_label_encoding": {
+    "Hazardous": 0,
+    "Non-Recyclable": 1,
+    "Organic": 2,
+    "Recyclable": 3
+  },
+  "class_mapping_file": "results/outputs/member3_class_mapping.json",
+  "warnings_report_file": "audit_reports/member3_label_warnings.csv",
+  "validation_scope": "Directory hierarchy, label taxonomy, and cross-stage label agreement against the Stage 01 and Stage 02 manifests. Image pixel content was not inspected at this stage.",
+  "next_step": "Hand off verified stage3_labels directory to Member 04 (Image Standardization)."
+}
