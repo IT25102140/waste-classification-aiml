@@ -1,0 +1,16 @@
+{
+  "member": "Welpwelawa",
+  "it_number": "IT25102510",
+  "task": "Image Standardization",
+  "status": "COMPLETED",
+  "input_stage": "stage3_labels",
+  "output_stage": "stage4_standardized",
+  "input_image_count": 2622,
+  "output_image_count": 2622,
+  "target_size": [
+    224,
+    224
+  ],
+  "target_mode": "RGB",
+  "next_step": "Hand off stage4_standardized to Member 5 for Pixel Normalization."
+}
