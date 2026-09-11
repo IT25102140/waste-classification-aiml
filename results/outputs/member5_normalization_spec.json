@@ -14,5 +14,5 @@
     0.224,
     0.225
   ],
-  "note": "Normalization is a model-input transform; do not save normalized values as JPEG."
+  "note": "Normalization is applied via model-input transform (torchvision.transforms.Normalize)."
 }
