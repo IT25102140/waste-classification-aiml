@@ -4,6 +4,35 @@
   "task": "Pixel Normalization",
   "status": "COMPLETED",
   "input_stage": "data/processed/stage4_standardized",
-  "output_stage": "data/processed/stage4_standardized",
-  "next_step": "Hand off verified output to the next member."
+  "output_stage": "data/processed/stage5_normalized",
+  "input_image_count": 2622,
+  "output_image_count": 2622,
+  "class_distribution_input": {
+    "Hazardous": 672,
+    "Non-Recyclable": 637,
+    "Organic": 663,
+    "Recyclable": 650
+  },
+  "class_distribution_output": {
+    "Hazardous": 672,
+    "Non-Recyclable": 637,
+    "Organic": 663,
+    "Recyclable": 650
+  },
+  "image_size": [
+    224,
+    224
+  ],
+  "imagenet_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "imagenet_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "processing_errors": 0,
+  "next_step": "Hand off verified stage5_normalized dataset & transform to Member 6"
 }
