@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Google Colab / temporary files
+*.tmp
+*.temp
+
+# Raw dataset images are kept locally/Drive but not committed
+# to ordinary GitHub because of repository/file-size limits.
+data/raw/**/*.jpg
+data/raw/**/*.jpeg
+data/raw/**/*.png
+data/raw/**/*.webp
+data/raw/**/*.gif
+data/raw/**/*.bmp
+data/raw/**/*.tif
+data/raw/**/*.tiff
+
+# Keep the raw-data directory itself
+!data/raw/.gitkeep
+
+# Do not commit temporary/generated recovery files
+results/outputs/missing_raw_images.csv
+results/outputs/missing_raw_recovery_report.csv
+
+# Other raw dataset assets
+data/raw/**/*.svg
+data/raw/.complete/
