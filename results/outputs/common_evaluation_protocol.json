@@ -1,0 +1,31 @@
+{
+  "primary_metric": "accuracy",
+  "secondary_metrics": [
+    "macro_precision",
+    "macro_recall",
+    "macro_f1",
+    "weighted_precision",
+    "weighted_recall",
+    "weighted_f1"
+  ],
+  "additional_outputs": [
+    "confusion_matrix",
+    "classification_report",
+    "per_class_precision",
+    "per_class_recall",
+    "per_class_f1"
+  ],
+  "classes": [
+    "Hazardous",
+    "Non-Recyclable",
+    "Organic",
+    "Recyclable"
+  ],
+  "num_classes": 4,
+  "train_samples": 1826,
+  "validation_samples": 389,
+  "test_samples": 388,
+  "test_evaluation": "single_final_evaluation",
+  "validation_use": "model_selection_and_early_stopping",
+  "test_use": "final_model_evaluation_only"
+}
