@@ -1,0 +1,12 @@
+{
+    "exact_duplicate_method": "SHA-256 cryptographic hash",
+    "exact_duplicate_rule": "Images with identical SHA-256 hashes are byte-for-byte identical.",
+    "perceptual_duplicate_method": "pHash",
+    "perceptual_distance": "Hamming distance",
+    "phash_threshold": 6,
+    "phash_rule": "Pairs with pHash Hamming distance <= 6 were treated as visual duplicate candidates requiring visual review.",
+    "automatic_visual_deletion": false,
+    "cross_class_duplicates": "Flagged for label review rather than automatically deleted.",
+    "same_class_duplicates": "One deterministic representative retained; duplicate copies excluded.",
+    "final_image_count": 2622
+}

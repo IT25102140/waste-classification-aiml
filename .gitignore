@@ -40,3 +40,39 @@ results/outputs/missing_raw_recovery_report.csv
 # Other raw dataset assets
 data/raw/**/*.svg
 data/raw/.complete/
+
+# Processed dataset images are kept in Google Drive
+# and are not committed to GitHub.
+
+data/processed/**/*.jpg
+data/processed/**/*.jpeg
+data/processed/**/*.png
+data/processed/**/*.webp
+data/processed/**/*.gif
+data/processed/**/*.bmp
+data/processed/**/*.tif
+data/processed/**/*.tiff
+
+# Keep processed dataset directories themselves
+!data/processed/.gitkeep
+
+
+# Final training dataset images are kept in Google Drive
+# and are not committed to GitHub.
+data/final_dataset/**/*.jpg
+data/final_dataset/**/*.jpeg
+data/final_dataset/**/*.png
+data/final_dataset/**/*.webp
+data/final_dataset/**/*.gif
+data/final_dataset/**/*.bmp
+data/final_dataset/**/*.tif
+data/final_dataset/**/*.tiff
+
+# Keep final dataset directories themselves
+!data/final_dataset/
+!data/final_dataset/train/
+!data/final_dataset/validation/
+!data/final_dataset/test/
+!data/final_dataset/train/*/
+!data/final_dataset/validation/*/
+!data/final_dataset/test/*/

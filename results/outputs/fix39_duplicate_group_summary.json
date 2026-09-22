@@ -1,0 +1,16 @@
+{
+  "dataset_rows": 2622,
+  "phash_failures": 0,
+  "phash_threshold": 6,
+  "candidate_duplicate_pairs": 13,
+  "connected_duplicate_groups": 11,
+  "duplicate_rows": 23,
+  "cross_class_conflict_groups": 7,
+  "same_class_cross_split_groups": 2,
+  "same_split_duplicate_groups": 2,
+  "group_type_counts": {
+    "CROSS_CLASS_CONFLICT": 7,
+    "SAME_CLASS_CROSS_SPLIT": 2,
+    "SAME_SPLIT_DUPLICATE": 2
+  }
+}

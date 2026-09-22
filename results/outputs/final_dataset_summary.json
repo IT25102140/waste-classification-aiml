@@ -1,0 +1,20 @@
+{
+    "dataset_name": "final_dataset",
+    "status": "READY_FOR_MODEL_TRAINING",
+    "total_images": 2603,
+    "train": 1826,
+    "validation": 389,
+    "test": 388,
+    "classes": [
+        "Hazardous",
+        "Non-Recyclable",
+        "Organic",
+        "Recyclable"
+    ],
+    "source": "stage4_standardized",
+    "official_split_file": "/content/drive/MyDrive/Waste_Classification_FINAL/results/outputs/frozen_train_val_test_split.csv",
+    "member4_manifest": "/content/drive/MyDrive/Waste_Classification_FINAL/results/outputs/member4_standardization_manifest.csv",
+    "dataset_path": "/content/drive/MyDrive/Waste_Classification_FINAL/data/final_dataset",
+    "subcategory_preserved": true,
+    "collision_safe": true
+}

@@ -1,0 +1,12 @@
+duplicate_group_id,group_size,group_type,classes,splits,subcategories,min_phash_distance,max_phash_distance,cross_class,cross_split,same_class,same_split,member3_statuses,member3_review_reasons
+1,3,CROSS_CLASS_CONFLICT,Hazardous | Organic,train | validation,e-waste | kitchen_waste,,,True,True,False,False,VALID,Exact main class and subcategory taxonomy match
+2,2,CROSS_CLASS_CONFLICT,Non-Recyclable | Recyclable,train,cans_all_type | styrofoam_product,,,True,False,False,True,AUTO_CORRECTED | VALID,Exact main class and subcategory taxonomy match | Upstream directory typo 'stroform_product' normalized to 'styrofoam_product'
+3,2,CROSS_CLASS_CONFLICT,Non-Recyclable | Recyclable,test | train,ceramic_product | glass_containers,,,True,True,False,False,VALID,Exact main class and subcategory taxonomy match
+4,2,SAME_CLASS_CROSS_SPLIT,Hazardous,test | train,e-waste,,,False,True,True,False,VALID,Exact main class and subcategory taxonomy match
+5,2,SAME_CLASS_CROSS_SPLIT,Hazardous,test | train,e-waste,,,False,True,True,False,VALID,Exact main class and subcategory taxonomy match
+6,2,CROSS_CLASS_CONFLICT,Non-Recyclable | Recyclable,train | validation,paper_products | styrofoam_product,,,True,True,False,False,AUTO_CORRECTED | VALID,Exact main class and subcategory taxonomy match | Upstream directory typo 'stroform_product' normalized to 'styrofoam_product'
+7,2,CROSS_CLASS_CONFLICT,Non-Recyclable | Recyclable,test | train,paper_products | styrofoam_product,,,True,True,False,False,AUTO_CORRECTED | VALID,Exact main class and subcategory taxonomy match | Upstream directory typo 'stroform_product' normalized to 'styrofoam_product'
+8,2,SAME_SPLIT_DUPLICATE,Hazardous,validation,e-waste,,,False,False,True,True,VALID,Exact main class and subcategory taxonomy match
+9,2,CROSS_CLASS_CONFLICT,Non-Recyclable | Recyclable,test | validation,ceramic_product | glass_containers,,,True,True,False,False,VALID,Exact main class and subcategory taxonomy match
+10,2,SAME_SPLIT_DUPLICATE,Hazardous,test,e-waste,,,False,False,True,True,VALID,Exact main class and subcategory taxonomy match
+11,2,CROSS_CLASS_CONFLICT,Non-Recyclable | Recyclable,test,ceramic_product | glass_containers,,,True,False,False,True,VALID,Exact main class and subcategory taxonomy match

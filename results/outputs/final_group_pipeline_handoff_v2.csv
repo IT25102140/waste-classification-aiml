@@ -1,0 +1,20 @@
+check,status,details
+Official frozen split,PASS,"2,603 rows"
+Train split,PASS,"1,826 images"
+Validation split,PASS,389 images
+Test split,PASS,388 images
+Four-class mapping,PASS,4 classes
+Physical file existence,PASS,"2,603 / 2,603"
+Image readability,PASS,"2,603 / 2,603"
+RGB format,PASS,All images
+224×224 standardization,PASS,All images
+Training augmentation,PASS,Flip + Rotation + ColorJitter
+Evaluation augmentation,PASS,No random augmentation
+ImageNet normalization,PASS,Train + validation + test
+DataLoader pipeline,PASS,Batch size 32
+Label encoding,PASS,0–3
+Cross-split overlap,PASS,0
+Common optimizer,PASS,Adam
+Common loss,PASS,CrossEntropyLoss
+Random seed,PASS,42
+Pipeline status,FROZEN,Ready for six-model training

@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "pipeline_version": "FIX41",
+  "project": "/content/drive/MyDrive/Waste_Classification_FINAL",
+  "official_frozen_split": "/content/drive/MyDrive/Waste_Classification_FINAL/results/outputs/frozen_train_val_test_split.csv",
+  "official_frozen_split_rows": 2603,
+  "official_frozen_split_sha256": "e270e4f64a77a39a54e27ba43d409b787e559b25a02633b9fefd3425c6ed493a",
+  "dataset_sizes": {
+    "train": 1826,
+    "validation": 389,
+    "test": 388,
+    "total": 2603
+  },
+  "classes": [
+    "Hazardous",
+    "Non-Recyclable",
+    "Organic",
+    "Recyclable"
+  ],
+  "class_to_index": {
+    "Hazardous": 0,
+    "Non-Recyclable": 1,
+    "Organic": 2,
+    "Recyclable": 3
+  },
+  "class_counts": {
+    "Hazardous": 666,
+    "Non-Recyclable": 631,
+    "Organic": 662,
+    "Recyclable": 644
+  },
+  "class_split": {
+    "Hazardous": {
+      "test": 100,
+      "train": 467,
+      "validation": 99
+    },
+    "Non-Recyclable": {
+      "test": 93,
+      "train": 444,
+      "validation": 94
+    },
+    "Organic": {
+      "test": 100,
+      "train": 463,
+      "validation": 99
+    },
+    "Recyclable": {
+      "test": 95,
+      "train": 452,
+      "validation": 97
+    }
+  },
+  "image_size": [
+    224,
+    224
+  ],
+  "channels": 3,
+  "training_transform": [
+    "Resize(224,224)",
+    "RandomHorizontalFlip(p=0.5)",
+    "RandomRotation(degrees=15)",
+    "ColorJitter(brightness=0.15, contrast=0.15, saturation=0.10)",
+    "ToTensor()",
+    "Normalize(ImageNet mean/std)"
+  ],
+  "evaluation_transform": [
+    "Resize(224,224)",
+    "ToTensor()",
+    "Normalize(ImageNet mean/std)"
+  ],
+  "evaluation_random_augmentation": false,
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "batch_size": 32,
+  "num_workers": 2,
+  "pin_memory": true,
+  "seed": 42,
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "optimizer": "Adam",
+  "loss": "CrossEntropyLoss",
+  "max_epochs": 20,
+  "early_stopping_patience": 5,
+  "dataset_integrity": {
+    "missing_files": 0,
+    "invalid_images": 0,
+    "all_rgb": true,
+    "all_224x224": true,
+    "split_overlap": 0
+  }
+}
