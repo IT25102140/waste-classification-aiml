@@ -1,0 +1,32 @@
+{
+  "original_rows": 2622,
+  "duplicate_group_count": 11,
+  "duplicate_group_member_rows": 23,
+  "cross_class_groups": 7,
+  "same_class_cross_split_groups": 2,
+  "same_split_duplicate_groups": 2,
+  "excluded_rows": 19,
+  "candidate_rows": 2603,
+  "candidate_class_counts": {
+    "Hazardous": 666,
+    "Non-Recyclable": 631,
+    "Organic": 662,
+    "Recyclable": 644
+  },
+  "candidate_split_counts": {
+    "test": 388,
+    "train": 1826,
+    "validation": 389
+  },
+  "policy": {
+    "cross_class_conflict": "EXCLUDE_ALL_MEMBERS",
+    "same_class_cross_split": "KEEP_TEST_AND_EXCLUDE_OTHER_SPLIT",
+    "same_split_duplicate": "KEEP_DETERMINISTIC_FIRST_PATH"
+  },
+  "original_frozen_split_modified": false,
+  "raw_dataset_modified": false,
+  "stage1_modified": false,
+  "stage2_modified": false,
+  "stage3_modified": false,
+  "stage4_modified": false
+}

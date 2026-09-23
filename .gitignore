@@ -57,7 +57,9 @@ data/processed/**/*.tiff
 !data/processed/.gitkeep
 
 
-# Final training dataset images are kept in Google Drive
+
+
+# Final modeling dataset images are kept in Google Drive
 # and are not committed to GitHub.
 data/final_dataset/**/*.jpg
 data/final_dataset/**/*.jpeg
@@ -68,11 +70,5 @@ data/final_dataset/**/*.bmp
 data/final_dataset/**/*.tif
 data/final_dataset/**/*.tiff
 
-# Keep final dataset directories themselves
-!data/final_dataset/
-!data/final_dataset/train/
-!data/final_dataset/validation/
-!data/final_dataset/test/
-!data/final_dataset/train/*/
-!data/final_dataset/validation/*/
-!data/final_dataset/test/*/
+# Keep the final-dataset directory itself
+!data/final_dataset/.gitkeep

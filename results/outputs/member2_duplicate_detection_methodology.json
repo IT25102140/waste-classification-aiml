@@ -1,12 +1,42 @@
 {
-    "exact_duplicate_method": "SHA-256 cryptographic hash",
-    "exact_duplicate_rule": "Images with identical SHA-256 hashes are byte-for-byte identical.",
-    "perceptual_duplicate_method": "pHash",
-    "perceptual_distance": "Hamming distance",
-    "phash_threshold": 6,
-    "phash_rule": "Pairs with pHash Hamming distance <= 6 were treated as visual duplicate candidates requiring visual review.",
-    "automatic_visual_deletion": false,
-    "cross_class_duplicates": "Flagged for label review rather than automatically deleted.",
-    "same_class_duplicates": "One deterministic representative retained; duplicate copies excluded.",
-    "final_image_count": 2622
+  "member": "IT25102378",
+  "technique": "Exact and Visual Duplicate Detection",
+  "input_images": 2935,
+  "final_images": 2622,
+  "exact_duplicate_method": {
+    "algorithm": "SHA-256",
+    "purpose": "Identify byte-for-byte identical images"
+  },
+  "visual_duplicate_method": {
+    "algorithm": "Perceptual Hash (pHash)",
+    "threshold": "<= 6",
+    "grouping_method": "Union-Find"
+  },
+  "duplicate_analysis": {
+    "exact_duplicate_groups": 286,
+    "images_in_exact_duplicate_groups": 575,
+    "cross_class_exact_duplicate_groups": 5,
+    "phash_candidates": 43,
+    "already_exact_relationships": 11,
+    "new_visual_candidates": 32
+  },
+  "final_reduction": {
+    "input": 2935,
+    "after_exact_deduplication": 2652,
+    "after_visual_deduplication": 2622,
+    "exact_same_class_exclusions": 283,
+    "visual_same_class_exclusions": 30
+  },
+  "final_class_counts": {
+    "Hazardous": 672,
+    "Non-Recyclable": 637,
+    "Organic": 663,
+    "Recyclable": 650
+  },
+  "verification": {
+    "final_manifest": 2622,
+    "missing_files": 0,
+    "extra_files": 0,
+    "zero_byte_files": 0
+  }
 }

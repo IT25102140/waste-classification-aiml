@@ -1,19 +1,44 @@
 # Raw Dataset
 
-The raw waste-image dataset is maintained separately from the Git repository
-because the complete image collection is approximately 1 GB and is not
-appropriate for storage in ordinary Git history.
+## Dataset Source
 
-The dataset used for the preprocessing pipeline contains 2,935 images
-across four classes:
+The original waste image dataset used for this project was obtained from Kaggle:
+
+https://www.kaggle.com/datasets/phenomsg/waste-classification?resource=download
+
+## Dataset
+
+Source platform: Kaggle
+
+Dataset name: Waste Classification
+
+The raw dataset contains four main waste classes used in this project:
 
 - Hazardous
 - Non-Recyclable
 - Organic
 - Recyclable
 
-The preprocessing workflow and dataset manifests in this repository document
-the transformations applied to the dataset.
+## Usage in This Project
 
-The final frozen dataset contains 2,622 images after cleaning, duplicate
-removal, and label validation.
+The raw dataset was used as the starting point for the preprocessing pipeline.
+
+Pipeline:
+
+Raw Dataset
+→ Dataset Cleaning
+→ Exact + Visual Duplicate Detection
+→ Label Validation
+→ Image Standardization
+→ Pixel Normalization
+→ Training Augmentation
+→ Final Dataset
+
+The final processed dataset is stored separately under:
+
+data/final_dataset/
+
+## Important
+
+The raw dataset is retained as the source/reference dataset and is not modified during preprocessing.
+All preprocessing operations produce separate processed stages.

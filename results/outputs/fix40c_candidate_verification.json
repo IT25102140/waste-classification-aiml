@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "original_rows": 2622,
+  "candidate_rows": 2603,
+  "excluded_rows": 19,
+  "added_rows": 0,
+  "train_rows": 1826,
+  "validation_rows": 389,
+  "test_rows": 388,
+  "class_counts": {
+    "Hazardous": 666,
+    "Non-Recyclable": 631,
+    "Organic": 662,
+    "Recyclable": 644
+  },
+  "physical_files_missing": 0,
+  "invalid_images": 0,
+  "cross_class_duplicate_members_remaining": 0,
+  "same_class_cross_split_duplicate_members_remaining": 0,
+  "same_split_duplicate_groups_with_multiple_members": 0,
+  "split_overlap": 0,
+  "candidate_is_subset_of_original": true,
+  "original_frozen_split_modified": false,
+  "candidate_sha256": "e270e4f64a77a39a54e27ba43d409b787e559b25a02633b9fefd3425c6ed493a",
+  "original_frozen_sha256": "fe675de4b0163cb0766c0c1ad8aa5aaa5fe9a19374d1f70a14d22b08da5cde5d"
+}
